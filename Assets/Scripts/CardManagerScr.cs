@@ -9,7 +9,7 @@ public struct Card
     public Sprite Logo;
     public int Attack, Defence;
 
-    public Card(string name, string LogoPath, int attack, int defence)
+    public Card(string name, string logoPath, int attack, int defence)
     {
         Name = name;
         Logo = Resources.Load<Sprite>(logoPath);
@@ -29,11 +29,12 @@ public class CardManagerScr : MonoBehaviour
 
     public void Awake()
     {
-        CardManager.AllCards.Add(new Card("Card1", "Sprite/Cards/Card1", 5, 5));
-        CardManager.AllCards.Add(new Card("Card2", "Sprite/Cards/Card2", 4, 3));
-        CardManager.AllCards.Add(new Card("Card3", "Sprite/Cards/Card3", 3, 3));
-        CardManager.AllCards.Add(new Card("Card4", "Sprite/Cards/Card4", 2, 1));
-        CardManager.AllCards.Add(new Card("Card5", "Sprite/Cards/Card5", 8, 1));
-        CardManager.AllCards.Add(new Card("Card6", "Sprite/Cards/Card6", 1, 1));
+
+        CardManager.AllCards.Add(new Card("smile", "Sprites/Cards/smile", 4, 3));
+        CardManager.AllCards.Add(new Card("face", "Sprites/Cards/face", 5, 5));
+        CardManager.AllCards.Add(new Card("hmm", "Sprites/Cards/hmm", 3, 3));
+        CardManager.AllCards.Add(new Card("micro", "Sprites/Cards/micro", 2, 1));
+        CardManager.AllCards.Add(new Card("pominki", "Sprites/Cards/pominki", 8, 1));
+        CardManager.AllCards.Add(new Card("pomoika", "Sprites/Cards/pomoika", 1, 1));
     }
 }
